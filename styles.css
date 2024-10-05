@@ -133,7 +133,67 @@ table, th, td {
 
 th {
     background: #f4f4f4;
+    color:black;
 }
+
+/* Services Section */
+.services {
+  position: relative;
+  padding: 20px; /* Add some padding for the content */
+  color: white; /* Set text color to white for better visibility */
+}
+
+.services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./images/service1.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  /* opacity: 0.5; Adjust opacity to your liking */
+  z-index: 1; /* Make sure it stays behind the content */
+}
+
+.services::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  z-index: 2; /* Ensure it’s above the image but below the text */
+}
+
+.services h1,
+.services p,
+.services table {
+  position: relative; /* This ensures content is above the background */
+  z-index: 3; /* Content appears above the background */
+  color: #fffdfd; /* Optional: Change text color for better visibility */
+}
+
+/* Join Now Button */
+.join-now-btn {
+  display: inline-block; /* Ensures the button is inline */
+  padding: 2px 4px; /* Adjusted padding for a smaller button */
+  background-color: #e74c3c; /* Red background */
+  color: white; /* White text */
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid #e74c3c; /* Optional: Red border for the button */
+  text-align: center; /* Center text inside button */
+}
+
+.join-now-btn:hover {
+  background-color: #c4483a; /* Darker red on hover */
+}
+
 
 
 /* Contact.html */
