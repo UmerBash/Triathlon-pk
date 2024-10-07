@@ -1,146 +1,150 @@
+:root {
+  --primary-color: #2D2155; /* Header and footer */
+  --white-color: white; /* Text in headers, footers, and buttons */
+  --button-color: #6D40E4;
+  --hover-color: #3d2482; /* On-click for buttons and text hover */
+  --background-color: #e0f7fa; /* Light background */
+}
+
 /* General Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-color); /* Light blue */
+  color: #333;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header/Navbar */
 header .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  .navbar ul li {
-    margin-left: 30px;
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .logo img {
-    width: 80px;
-  }
-  
-  /* Main/Hero Section */
-  main{
-    flex: 1;
-  }
-  main .hero {
-    position: relative;
-    height: 100vh;
-    background-image: url('./images/home_page_bg.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* To add opacity */
-    z-index: 1;
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-  }
-  
-  .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content .homepage-btn {
-    padding: 10px 20px;
-    background-color: #e74c3c;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-  }
-  .hero-content .homepage-btn:hover{
-    background-color: #c4483a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: var(--primary-color); /* Using primary color */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-  }
-  
-  /* Footer Section */
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    /* position: fixed; */
-    /* bottom:0;
-    left:0;
-    width: 100%; */
-  }
-  
-  footer a {
-    color: #e74c3c;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
 
-/* Table */
+.navbar ul li {
+  margin-left: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--white-color); /* Using white color for text */
+  font-weight: bold;
+}
+
+.logo img {
+  width: 80px;
+}
+
+/* Main/Hero Section */
+main {
+  flex: 1;
+}
+
+main .hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('./images/home_page_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* To add opacity */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content .homepage-btn {
+  padding: 10px 20px;
+  background-color: var(--button-color); /* Using primary color */
+  color: var(--white-color); /* Text color for buttons */
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.hero-content .homepage-btn:hover {
+  background-color: var(--hover-color); /* Using hover color for button on hover */
+  transition-duration: 0.3s ;
+}
+
+/* Footer Section */
+footer {
+  background-color: var(--primary-color); /* Footer using primary color */
+  color: var(--white-color); /* Text color using white color */
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: var(--white-color); /* Link text color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration:underline;
+}
+
+/* services page --> Table */  
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 table, th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
 }
 
 th {
-    background: #f4f4f4;
-    color:black;
+  background: #b3e5fc; /* Light blue */
+  color: #3d2482; /* Dark blue */
 }
 
 /* Services Section */
 .services {
   position: relative;
-  padding: 20px; /* Add some padding for the content */
-  color: white; /* Set text color to white for better visibility */
+  padding: 20px;
+  color: white;
 }
 
 .services::before {
@@ -150,11 +154,10 @@ th {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('./images/service1.jpg'); /* Replace with your image path */
+  background-image: url('./images/service1.jpg');
   background-size: cover;
   background-position: center;
-  /* opacity: 0.5; Adjust opacity to your liking */
-  z-index: 1; /* Make sure it stays behind the content */
+  z-index: 1;
 }
 
 .services::after {
@@ -164,37 +167,38 @@ th {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
-  z-index: 2; /* Ensure it’s above the image but below the text */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .services h1,
 .services p,
 .services table {
-  position: relative; /* This ensures content is above the background */
-  z-index: 3; /* Content appears above the background */
-  color: #fffdfd; /* Optional: Change text color for better visibility */
+  position: relative;
+  z-index: 3;
+  color: #fffdfd;
 }
 
 /* Join Now Button */
 .join-now-btn {
-  display: inline-block; /* Ensures the button is inline */
-  padding: 2px 4px; /* Adjusted padding for a smaller button */
-  background-color: #e74c3c; /* Red background */
-  color: white; /* White text */
+  display: inline-block;
+  padding: 2px 4px;
+  background-color: var(--button-color); /* Using primary color */
+  color: var(--white-color); /* White text */
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
-  border: 2px solid #e74c3c; /* Optional: Red border for the button */
-  text-align: center; /* Center text inside button */
+  border: 2px solid var(--button-color); /* Dark blue border */
+  text-align: center;
 }
 
 .join-now-btn:hover {
-  background-color: #c4483a; /* Darker red on hover */
+  background-color: var(--hover-color); /* Hover color */
+  transition-duration: 0.3s ;
+  border: 2px solid var(--hover-color);
+
 }
-
-
 
 /* Contact.html */
 main .contact {
@@ -212,85 +216,80 @@ main .contact {
 }
 
 .contact-overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* To add opacity */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
   padding: 30px;
-    border-radius: 8px; 
-    max-width: 70vw; 
+  border-radius: 8px;
+  max-width: 70vw;
 }
 
 /* Contact Form */
 form {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--button-color); /* Input border */
 }
 
-button {
-    padding: 10px 20px;
-    background: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
 
-button:hover {
-    background: #555;
-}
 
 .contact-options {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Space above the strip */
-  background-color: rgba(0, 0, 0, 0.632); /* Background color for the strip */
-  padding: 15px; /* Inner spacing */
-  border-radius: 8px; /* Rounded corners */
-  color: white; /* Text color */
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.632);
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
 }
 
 .contact-item {
-  margin: 0 20px; /* Space between items */
-  display: flex; /* Flex for icon and text */
-  align-items: center; /* Center vertically */
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
 }
 
 .contact-item i {
-  margin-right: 8px; /* Space between icon and text */
+  margin-right: 8px;
 }
 
-.submit-btn{  
+/* Submit Button */
+.submit-btn {
   padding: 10px 20px;
-  background-color: #e74d3c;
-  color: white;
+  background-color: var(--button-color); /* Primary color */
+  color: var(--white-color); /* White text */
+  border: 2px solid var(--button-color);
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
 }
 
-/* Hover effect for button */
 .submit-btn:hover {
-    background-color: #c4483a; /* Darker background on hover */
+  background-color: var(--hover-color); /* Hover color */
+  transition-duration: 0.3s ;
+  border: 2px solid var(--hover-color);
 }
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
+  nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
 
-    .hero {
-        padding: 20px;
-    }
+  .hero {
+      padding: 20px;
+  }
 
-    table, th, td {
-        font-size: 0.9em;
-    }
+  table, th, td {
+      font-size: 0.9em;
+  }
 }
+
+
+
