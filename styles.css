@@ -292,5 +292,546 @@ input, textarea {
   }
 }
 
+/*About Us Page*/
+.about{
+	padding:80px 0px;
+	background-color:#ffffff;
+  background-image: url('./images/wwoBg.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+.about .content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about .section-title{
+  font-size: 3.5rem;
+  color: #000000;
+  margin-bottom: 30px;
+  justify-content: center;
+  text-align: center;
+}
+.about .content{ 
+ -webkit-display: flex;
+ display: flex;
+}
+.about .content .box {
+  flex: 0 0 auto; /* Adjust box width to fit available space */
+  max-width: 50%;
+  padding: 20px; /* Reduce padding for smaller screens */
+}
+
+@media (min-width: 1050px) {
+  .about .content .box {
+      flex: 0 0 20%; /* Set a fixed width for larger screens */
+  }
+}
+
+.about .content .box .inner{
+	background-color:#3d2482;
+}
+
+.about .content .box .inner .img img{
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+  .about .content .box .inner .img img {
+      padding: auto; 
+      width: auto;
+      height: auto;
+  }
+}
+.about .content .box .inner .text{
+	padding:30px;
+}
+
+.about .content .box .inner .text h4{
+  font-size: 20px;
+  margin:0;
+  padding: 0px 0px 15px;
+  font-weight: 500;
+  color:#ffffff;
+ text-transform: capitalize;
+  text-align: center;
+}
+.about .content .box .inner .text p{
+	font-size: 15px;
+	line-height:20px;
+	color:#ffffff;
+	text-align: center;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+.pool-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #111; /* Dark background for the pool section */
+  }
+  
+  .pool-content {
+    max-width: 50%;
+  }
+  
+  .pool-content h2 {
+    font-size: 2.1rem;
+    color: #f9c74f;
+    margin-bottom: 20px;
+  }
+  
+  .pool-content p {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .pool-image img {
+    max-width: 70%;
+    border-radius: 20px;
+    margin-left: 200px;
+  }
+
+  /* About Info Section */
+.about-info {
+  background-color: #3d2482; /* Dark background to match theme */
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.box:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+}
+
+/* Hover effect for images */
+.box:hover .img img {
+  filter: brightness(0.9); /* Slightly darken the image on hover */
+  transition: filter 0.5s ease; /* Smooth transition for image effect */
+}
+
+.info-container {
+  display: flex;
+  background-color: #3d2482;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-card {
+  background: #e0f7fa;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  min-width: 250px;
+  margin: 20px 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 
+.info-card:hover {
+  transform: translateY(-10px);
+}
+
+
+.info-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.info-text {
+  font-size: 1.1rem;
+  color: #292929;
+}
+
+.our-history, .big-events, .trainer-spotlight {
+  padding: 40px 0;
+  background-color: #f9f9f9; /* Light background for contrast */
+  
+}
+
+
+.history-content, .trainer-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.history, .trainer {
+padding: 20px;
+margin: 20px 0;
+}
+
+
+.trainer-img {
+text-align: center;
+border-radius: 20px;
+}
+
+.history-text, .trainer-info {
+padding: 10px;
+text-align: center;
+}
+.previous-events {
+padding: 50px 0;
+background-color: #f9f9f9; /* Light background for contrast */
+}
+/* FAQ Section Styles */
+/* FAQ Section Styles */
+.faq {
+background-color: #242424;
+color: #ffffff;
+padding: 50px 20px;
+border-radius: 5px;
+margin: 0px 0;
+}
+
+.faq-container {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.faq-item {
+background-color: #242424;
+}
+.events-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.event-card {
+background-color: white;
+border: 1px solid #ddd;
+border-radius: 10px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+width: 300px; /* Width of each card */
+margin: 20px; /* Spacing between cards */
+padding: 20px;
+text-align: center;
+}
+
+.event-image {
+width: 100%;
+height: 150px; /* Fixed height for images */
+object-fit: cover;
+border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+
+.section-title {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+}
+
+.events-list li {
+  margin-bottom: 20px; /* Space between events */
+  border: bottom 20px;
+}
+/* Event Page Styles */
+.events {
+  padding: 40px;
+  background-color: #f1f1f1; /* Dark background */
+  color: #cf0000;
+}
+
+.events-container {
+  max-width: auto;
+  margin: 0 auto;
+  padding: auto;
+  background-color: #3d2482;
+
+}
+.event .section-title{
+  background-color: #b3e5fc;
+}
+.events h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f9c74f;
+}
+
+.events h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  color: #f9c74f;
+  margin-left: 15px;
+}
+
+.events p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding: 10px;
+  color: #ddd;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Event Table Styles */
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.event-table thead {
+  background-color: #333;
+}
+
+.event-table th, .event-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+  color: #ddd;
+}
+
+.event-table th {
+  font-weight: bold;
+  color: #f9c74f; /* Header text color */
+}
+
+.event-table tbody tr:nth-child(even) {
+  background-color: #222;
+}
+
+.event-table tbody tr:hover {
+  background-color: #444;
+}
+/* Trainer Intro Section */
+.trainer-intro {
+  background-color: #f0f0f0; /* Light background for contrast */
+  color: #333;
+  padding: 60px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Change font for a modern look */
+}
+
+.trainers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+  background-color: white; /* White background for the content */
+  padding: 40px;
+}
+
+.trainer-img img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px; /* Set a maximum width for the image */
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.trainer-info {
+  padding: 20px;
+  flex: 1;
+}
+
+.trainers {
+  padding: 50px 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  text-align: center;
+}
+
+.trainer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trainer-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 300px; /* Width of each card */
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.trainer-card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.trainer-image img {
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover;
+}
+
+.trainer-info {
+  padding: 15px;
+}
+
+.trainer-specialty {
+  font-weight: bold;
+  color: #555; /* Slightly lighter color for specialty */
+}
+.trainers {
+padding: 50px 20px;
+background-color: #f9f9f9; /* Light background for contrast */
+text-align: center;
+}
+
+.trainer-container {
+display: flex;
+flex-direction: column; /* Stack trainer cards vertically */
+align-items: center; /* Center align cards */
+}
+
+.trainer-card {
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+margin: 20px;
+padding: 20px; /* Padding for text */
+width: 80%; /* Width of each card */
+max-width: 400px; /* Maximum width for cards */
+transition: transform 0.2s;
+}
+
+.trainer-card:hover {
+transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.trainer-specialty {
+font-weight: bold;
+color: #555; /* Slightly lighter color for specialty */
+margin: 10px 0; /* Margin for spacing */
+}
+
+@media (max-width: 768px) {
+  .trainer-container {
+    flex-direction: column;
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  .trainer-img img {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .trainer-info {
+    text-align: center;
+  }
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.event-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Width of each card */
+  margin: 20px; /* Spacing between cards */
+  padding: 20px;
+  text-align: center;
+}
+
+.event-image {
+  width: 100%;
+  height: 150px; /* Fixed height for images */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.events-list {
+    list-style: none;
+    padding: 0;
+}
+
+.events-list li {
+    margin-bottom: 20px; /* Space between events */
+    border: bottom 20px;
+}
+/* Event Table Styles */
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.event-table thead {
+  background-color: #333;
+}
+
+.event-table th, .event-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+  color: #ddd;
+}
+
+.event-table th {
+  font-weight: bold;
+  color: #f9c74f; /* Header text color */
+}
+
+.event-table tbody tr:nth-child(even) {
+  background-color: #222;
+}
+
+.event-table tbody tr:hover {
+  background-color: #444;
+}
+  /* Event Page Styles */
+  .events {
+    padding: 40px;
+    background-color: #111; /* Dark background */
+    color: #fff;
+}
+
+.events .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.events h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f9c74f;
+}
+
+.events h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: #f9c74f;
+    margin-left: 15px;
+}
+
+.events p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding: 10px;
+    color: #ddd;
+    text-align: center;
+    margin-bottom: 30px;
+}
